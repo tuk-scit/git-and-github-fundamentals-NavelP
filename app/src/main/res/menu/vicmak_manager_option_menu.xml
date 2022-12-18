@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/heading"
+        android:title="More Actions"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/refill_cylinders_menu"
+        android:title="Refill Cylinders"
+        android:icon="@drawable/ic_baseline_refresh_24"/>
+
+    <item
+        android:id="@+id/view_vicmak_users_menu"
+        android:title="View Users"
+        android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+    <item
+        android:id="@+id/print"
+        android:title="Print Commissions">
+
+        <menu>
+            <item
+                android:id="@+id/view_vicmak_daily_commission_menu"
+                android:title="Daily Commission"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/view_vicmak_monthly_commission_menu"
+                android:title="Monthly Commission"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/view_vicmak_yearly_commission_menu"
+                android:title="Yearly Commission"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/view_vicmak_product_analysis_menu"
+        android:title="Product Analysis">
+
+        <menu>
+            <item
+                android:id="@+id/gas_analysis"
+                android:title="Gas sales"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/burner_analysis"
+                android:title="Burner sales"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/regulator_analysis"
+                android:title="Regulator sales"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/grills_analysis"
+                android:title="Grills sales"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+
+            <item
+                android:id="@+id/pipes_analysis"
+                android:title="Pipes sales"
+                android:icon="@drawable/ic_baseline_verified_user_24"/>
+        </menu>
+
+    </item>
+</menu>

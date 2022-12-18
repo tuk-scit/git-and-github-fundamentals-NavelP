@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".commissions.CommissionsDisplay">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commissionsHeading"
+        android:text="Commissions"
+        android:textStyle="bold"
+        android:background="#e0e0eb"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File location: /vicmakManager/commissions/"
+        android:id="@+id/location"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/commissionsHeading"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print .pdf"
+        android:backgroundTint="#0294fc"
+        android:layout_below="@+id/location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/printPDFFile"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commissionsRecycle"
+        android:layout_below="@id/printPDFFile"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

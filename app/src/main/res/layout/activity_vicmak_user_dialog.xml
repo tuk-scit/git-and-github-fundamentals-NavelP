@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/upper_func">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_details"
+            android:text="Info"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/deep_yellow"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_history_graph"
+            android:text="Graph"
+            android:layout_marginStart="5dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/deep_yellow"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_credit_status"
+            android:text="C. Status"
+            android:layout_marginStart="5dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/deep_yellow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upper_func"
+        android:id="@+id/content_holder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_email"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_phone"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_holder">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Delete"
+            android:text="Delete"
+            android:layout_marginStart="5dp"
+            android:drawableEnd="@drawable/ic_baseline_delete_outline_24"
+            android:textAllCaps="false"
+            android:backgroundTint="#ff0000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Contact"
+            android:text="Contact"
+            android:drawableEnd="@drawable/ic_baseline_call_24"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:backgroundTint="#00b386"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/debtor_phoneNumber"
+            android:background="#FFBB01"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="0723123161"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/credit_amount"
+            android:text="500/="
+            android:background="#FFBB01"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:layout_marginStart="30dp"
+            android:id="@+id/amount_added"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay"
+            android:text="Pay"
+            android:backgroundTint="#FFBB01"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

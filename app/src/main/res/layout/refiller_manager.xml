@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            android:text="Confirm Details"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="#f0f0f5"
+            android:textAlignment="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewRefillingCylinders"
+            android:layout_below="@id/heading"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitCylinders"
+            android:layout_marginTop="10dp"
+            android:text="Submit"
+            android:backgroundTint="#FFBB01"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/viewRefillingCylinders"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDetails"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:backgroundTint="#FFBB01"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/viewRefillingCylinders"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

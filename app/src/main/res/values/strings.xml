@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VicmakManager</string>
+    <string name="item">Item</string>
+    <string name="VICMAK_ORDERS_ID">vicmak_orders_id</string>
+    <string name="VICMAK_ORDERS">vicmak_orders</string>
+    <string name="alphdb_number">AlphDb Number</string>
+    <string name="email">Email</string>
+    <string name="phone_password">Phone/Password</string>
+    <string name="actions">Actions</string>
+</resources>

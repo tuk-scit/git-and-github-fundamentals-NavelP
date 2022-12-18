@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/regulators_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="#f0f0f5"
+            android:padding="4dp"
+            android:text="Regulator"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/burner_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/regulators_name"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/regulator_d"/>
+
+        <LinearLayout
+            android:id="@+id/type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burner_image"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regulator Type: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/regulator_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6kg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stock_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/regulator_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textColor="#ff9900"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sold_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stock_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold Regulators: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sold_regulators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:textColor="#00ff00"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commission_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sold_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commission: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/regulator_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

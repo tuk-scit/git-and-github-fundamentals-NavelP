@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Burners.UpdateBurners">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Gas Database"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="#f0f0f5"
+        android:id="@+id/update_burner_heading"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/update_burner_heading"
+        android:id="@+id/buying_price_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#FFBB01"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Buying Price"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="20dp"
+            android:id="@+id/buying_price"
+            android:hint="Enter Buying Price..."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/buying_selling_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buying_price_layout"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#FFBB01"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Selling Price"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="number"
+            android:id="@+id/selling_price"
+            android:hint="Enter Selling Price..."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/buying_stock_num_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buying_selling_layout"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#FFBB01"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Stock Numb"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="number"
+            android:id="@+id/burner_stock"
+            android:hint="Enter Stock Number..."/>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:hint="update"
+        android:backgroundTint="#00cc44"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/buying_stock_num_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:backgroundTint="#ff3300"
+        android:hint="cancel"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/buying_stock_num_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
