@@ -193,13 +193,14 @@ public class MainActivity extends AppCompatActivity implements ActivityChanger {
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem i) {
+        switch (i.getItemId()) {
             case R.id.refill_cylinders_menu:
                 startActivity(new Intent(getApplicationContext(), RefillingGas.class));
                 return true;
 
             case R.id.view_vicmak_users_menu:
+
                 startActivity(new Intent(getApplicationContext(), ViewUsers.class));
                 return true;
 
