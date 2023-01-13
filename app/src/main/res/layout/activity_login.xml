@@ -18,14 +18,15 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:text="Login Page"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,SpUsage" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/testing_info"
             android:layout_marginTop="10dp"
-            android:text="User email: haronmur502@gmail.com and phonenumber: 0723123161 for testing or create an account"
+            android:text="@string/testing_info"
             android:layout_below="@id/vicmak_login_heading"
             android:textAlignment="center"/>
 
@@ -41,7 +42,8 @@
             android:backgroundTint="@color/white"
             android:hint="Enter email..."
             android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:padding="10dp"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/password"
@@ -55,7 +57,8 @@
             android:backgroundTint="@color/white"
             android:hint="Enter phonenumber as password..."
             android:inputType="number"
-            android:padding="10dp" />
+            android:padding="10dp"
+            tools:ignore="HardcodedText,TextFields" />
 
 
         <Button
