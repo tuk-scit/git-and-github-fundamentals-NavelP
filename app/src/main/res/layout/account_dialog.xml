@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_action_heading"
+        android:text="This Account will be deleted"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="#FFBB01"
+        android:textColor="@color/white"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_text_message"
+        android:layout_below="@id/account_action_heading"
+        android:text="Are you sure you want to delete this Account?"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/account_action_heading"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:backgroundTint="#FFBB01"
+        android:text="Okay"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/account_text_message"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/cancel"
+        android:backgroundTint="#FFBB01"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="Cancel"
+        android:layout_below="@id/account_text_message"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>

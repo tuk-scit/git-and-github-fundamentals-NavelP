@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/ic_baseline_image_24"
+            android:id="@+id/ordered_item_history_image"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ordered_item_history_name"
+            android:text="Pro Gas"
+            android:layout_toRightOf="@id/ordered_item_history_image"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1300/="
+            android:backgroundTint="#00cc44"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/ordered_item_history_image"
+            android:layout_below="@id/ordered_item_history_name"
+            android:layout_margin="10dp"
+            android:id="@+id/ordered_item_history_price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date-Ordered: "
+            android:id="@+id/date_label"
+            android:layout_toRightOf="@id/ordered_item_history_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/5/2022"
+            android:id="@+id/date_label_value"
+            android:layout_toRightOf="@id/date_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time-Ordered: "
+            android:id="@+id/time_label"
+            android:layout_toRightOf="@id/ordered_item_history_name"
+            android:layout_below="@id/date_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30pm"
+            android:id="@+id/time_label_value"
+            android:layout_toRightOf="@id/date_label"
+            android:layout_below="@id/date_label_value"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:id="@+id/status_label"
+            android:layout_toRightOf="@id/ordered_item_history_name"
+            android:layout_below="@id/time_label"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:id="@+id/status_label_value"
+            android:layout_toRightOf="@id/date_label"
+            android:layout_below="@id/time_label_value"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date-Delivered: "
+            android:id="@+id/date_delivered_label"
+            android:layout_toRightOf="@id/ordered_item_history_name"
+            android:layout_below="@id/status_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:id="@+id/date_delivered_label_value"
+            android:layout_toRightOf="@id/date_label"
+            android:layout_below="@id/status_label_value"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time-Delivered: "
+            android:layout_toRightOf="@id/ordered_item_history_name"
+            android:layout_below="@id/date_delivered_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:id="@+id/time_delivered_label_value"
+            android:layout_toRightOf="@id/date_label"
+            android:layout_below="@id/date_delivered_label_value"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

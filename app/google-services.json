@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "720428237249",
+    "firebase_url": "https://vicmak-b2e1e-default-rtdb.firebaseio.com",
+    "project_id": "vicmak-b2e1e",
+    "storage_bucket": "vicmak-b2e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720428237249:android:b785068a5985ea579bef40",
+        "android_client_info": {
+          "package_name": "com.example.vicmakmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIatBoP1oLZuw1kUS4KQUodOCeNvCy6Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720428237249:android:bb7511c521e3c84e9bef40",
+        "android_client_info": {
+          "package_name": "com.vicshop.vicmak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIatBoP1oLZuw1kUS4KQUodOCeNvCy6Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720428237249:android:33b9bb86598c5fb49bef40",
+        "android_client_info": {
+          "package_name": "com.vicshop.vicmakgas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIatBoP1oLZuw1kUS4KQUodOCeNvCy6Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720428237249-aop7pmotn938bkcskqovs8jf1adg9of7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

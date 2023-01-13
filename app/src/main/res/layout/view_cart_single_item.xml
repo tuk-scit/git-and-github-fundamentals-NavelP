@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/view_cart_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Ordered"
+            android:id="@+id/view_cart_item_name"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@id/view_cart_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_cart_item_price"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#00cc44"
+            android:background="@drawable/rounded_border"
+            android:text="1300/="
+            android:padding="10dp"
+            android:layout_toRightOf="@id/view_cart_image"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/view_cart_item_name"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_similar_item"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_add_box_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_text"
+            android:text="Add Item"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/add_similar_item"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_indeterminate_check_box_24"
+            android:id="@+id/remove_item"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/add_text"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove item"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/remove_item"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

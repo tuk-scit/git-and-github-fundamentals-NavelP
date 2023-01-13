@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="links">
+        <item>Gas</item>
+        <item>Burners</item>
+        <item>Grills</item>
+        <item>Pipes</item>
+        <item>Regulators</item>
+    </string-array>
+</resources>
