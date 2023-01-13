@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements ActivityChanger {
                 return true;
 
             default:
-                return super.onOptionsItemSelected(item);
+                return super.onOptionsItemSelected(i);
         }
     }
 
