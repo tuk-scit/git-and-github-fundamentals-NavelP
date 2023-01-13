@@ -20,11 +20,20 @@
             android:text="Login Page"
             android:textSize="25dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/testing_info"
+            android:layout_marginTop="10dp"
+            android:text="User email: haronmur502@gmail.com and phonenumber: 0723123161 for testing or create an account"
+            android:layout_below="@id/vicmak_login_heading"
+            android:textAlignment="center"/>
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/vicmak_login_heading"
+            android:layout_below="@id/testing_info"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="40dp"
